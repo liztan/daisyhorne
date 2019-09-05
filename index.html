@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daisy Horne</title>
+
+<style>
+  body{
+    margin-top: 200px;
+    background-color: #fd9f88;
+  }
+
+  p {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<p>Daisy is
+
+<script>
+
+  function days_old(dt) {
+    var current = new Date(dt.getTime());
+    var previous = new Date(dt.getFullYear(), 0, 1);
+
+    return Math.ceil((current - previous + 1) / 86400000);
+  }
+  document.write(days_old(new Date(2019, 5, 28)));
+
+</script> days old.
+
+</p>
+
+</body>
+</html>
