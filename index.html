@@ -4,22 +4,38 @@
   <title>Daisy Horne</title>
 
 <style>
-  body{
-    margin-top: 200px;
+  body {
     background-color: #fd9f88;
   }
 
   p {
     font-family: 'Abril Fatface', cursive;
-    font-size: 40px;
+    font-size: 50px;
     color: #fff;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
+
+  .center {
+    height: 100vh;
+    position: relative;
+  }
+
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 </style>
+
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<div class="center">
 
 <p>Daisy is
 
@@ -36,6 +52,9 @@
 </script> days old.
 
 </p>
+</div>
+
+
 
 </body>
 </html>
